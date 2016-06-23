@@ -19,3 +19,9 @@ $ docker built -t exiftool .
 ```shell
 $ docker run -v "$PWD":/tmp exiftool <image>
 ```
+
+You might want to alias the above command to the `exiftool` command, so you can simply do:
+
+```shell
+$ exiftool <image>
+```
