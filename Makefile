@@ -23,5 +23,6 @@ start_container: build_container_image
 test: start_container
 	docker ps
 	tests/smoke-test.sh
-	docker kill ${CONTAINER_NAME};
-	docker rm ${CONTAINER_NAME}
+	docker ps
+	docker kill ${CONTAINER_TAG};
+	docker rm ${CONTAINER_TAG}
