@@ -2,7 +2,7 @@
 
 declare -i timeout=5
 
-`docker build -f ../Dockerfile -t exiftool .`
+docker build -t exiftool .
 while ! TEST_OUTPUT=`docker run exiftool -ver`;
     do sleep 0.1;
 done

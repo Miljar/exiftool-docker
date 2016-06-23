@@ -5,10 +5,7 @@
 
 SHELL=/bin/bash
 
-CONTAINER_TAG=miljar/exiftool:latest
-CONTAINER_NAME=exiftool
-
 all: test
 
-test: start_container
+test: 
 	tests/smoke-test.sh
