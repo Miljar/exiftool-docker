@@ -1,4 +1,4 @@
-# Exiftool Docker image
+# Exiftool Docker image [![Build Status](https://travis-ci.org/Miljar/exiftool-docker.svg?branch=master)](https://travis-ci.org/Miljar/exiftool-docker)
 
 ## Clone this repository
 
