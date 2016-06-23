@@ -2,7 +2,7 @@
 
 declare -i timeout=5
 
-while ! TEST_OUTPUT=`docker run -v $PWD:/tmp exiftool -ver`;
+while ! TEST_OUTPUT=`docker run exiftool -ver`;
     do sleep 0.1;
 done
 

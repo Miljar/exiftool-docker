@@ -6,7 +6,7 @@
 SHELL=/bin/bash
 
 CONTAINER_TAG=miljar/exiftool:latest
-	CONTAINER_NAME=exiftool
+CONTAINER_NAME=exiftool
 
 all: build_container_image
 
@@ -16,12 +16,12 @@ build_container_image:
 start_container: build_container_image
 	docker run \
 		-d \
-		-p 80:80 \
-		-v `pwd`:/var/www/html \
+		-v `pwd`:/tmp \
 		--name ${CONTAINER_NAME} \
 		-t ${CONTAINER_TAG}
 
 test: start_container
+	docker ps
 	tests/smoke-test.sh
 	docker kill ${CONTAINER_NAME};
 	docker rm ${CONTAINER_NAME}
