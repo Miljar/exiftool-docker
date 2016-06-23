@@ -15,7 +15,7 @@ RUN cd /tmp \
 	&& rm -rf Image-ExifTool-${EXIFTOOL_VERSION}
 
 
-#VOLUME /tmp
+VOLUME /tmp
 
 WORKDIR /tmp
 
