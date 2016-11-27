@@ -9,7 +9,7 @@ $ git clone git@github.com:Miljar/exiftool-docker.git && cd exiftool-docker
 ## Build container
 
 ```shell
-$ docker built -t exiftool .
+$ docker build -t exiftool .
 ```
 
 ## Run container
