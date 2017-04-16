@@ -1,7 +1,7 @@
 FROM alpine:3.3
 MAINTAINER Tom Van Herreweghe
 
-ENV EXIFTOOL_VERSION=10.20
+ENV EXIFTOOL_VERSION=10.49
 
 RUN apk add --no-cache perl make
 RUN cd /tmp \
