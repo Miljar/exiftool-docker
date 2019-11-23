@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:latest
 MAINTAINER Tom Van Herreweghe
 
 ENV EXIFTOOL_VERSION=11.76
