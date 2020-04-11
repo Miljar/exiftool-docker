@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER Tom Van Herreweghe
 MAINTAINER Jeroen Kransen
 
-ENV EXIFTOOL_VERSION=11.78
+ENV EXIFTOOL_VERSION=11.93
 
 RUN apk add --no-cache perl make ca-certificates
 RUN cd /tmp \
