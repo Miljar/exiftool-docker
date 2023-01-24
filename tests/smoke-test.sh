@@ -8,7 +8,7 @@ while ! TEST_OUTPUT=`docker run exiftool -ver`;
 done
 
 ## Assert server response
-if [ "$TEST_OUTPUT" != "12.33" ]
+if [ "$TEST_OUTPUT" != "12.55" ]
 then
-    echo "Failed asserting that '${TEST_OUTPUT}' equals '12.33'" && exit 1;
+    echo "Failed asserting that '${TEST_OUTPUT}' equals '12.55'" && exit 1;
 fi
