@@ -1,11 +1,11 @@
-FROM alpine:3.3
-MAINTAINER Tom Van Herreweghe
+FROM alpine:latest
+LABEL org.opencontainers.image.authors="Tom Van Herreweghe, Charles \"Cyndi\" Cavanaugh"
 
-ENV EXIFTOOL_VERSION=10.20
+ENV EXIFTOOL_VERSION=12.70
 
 RUN apk add --no-cache perl make
 RUN cd /tmp \
-	&& wget http://www.sno.phy.queensu.ca/~phil/exiftool/Image-ExifTool-${EXIFTOOL_VERSION}.tar.gz \
+	&& wget https://exiftool.org/Image-ExifTool-${EXIFTOOL_VERSION}.tar.gz \
 	&& tar -zxvf Image-ExifTool-${EXIFTOOL_VERSION}.tar.gz \
 	&& cd Image-ExifTool-${EXIFTOOL_VERSION} \
 	&& perl Makefile.PL \
